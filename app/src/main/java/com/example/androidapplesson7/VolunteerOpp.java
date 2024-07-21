@@ -1,17 +1,21 @@
 package com.example.androidapplesson7;
 
-// This class is like a database entry for contacts - we can store all 8 avatars here and use it to populate card views
+
+import android.net.Uri;
+
+
 public class VolunteerOpp {
-    public int Image;
+    public Uri ImageUri;
     public String Name;
     public String Date;
     public String Location;
 
+
     // Constructor
-    public VolunteerOpp(int a, String n, String d, String l){
-        Image = a;
-        Name = n;
-        Date = d;
-        Location = l;
+    public VolunteerOpp(Uri imageUri, String name, String date, String location){
+        ImageUri = imageUri;
+        Name = name;
+        Date = date;
+        Location = location;
     }
 }

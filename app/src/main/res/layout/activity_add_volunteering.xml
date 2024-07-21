@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+
+    <!-- Location -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOrganization"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Date -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardOrganization"
+        android:layout_marginTop="16dp">
+
+
+
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Date"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Activity -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardDate"
+        android:layout_marginTop="16dp">
+
+
+
+
+        <EditText
+            android:id="@+id/editTextActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Activity"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Details Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardActivity"
+        android:layout_marginTop="24dp">
+
+
+
+
+        <EditText
+            android:id="@+id/editTextDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Upload Image Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUploadImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardDetails"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+
+
+            <TextView
+                android:id="@+id/textUploadImageLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload Image"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+
+
+
+            <ImageButton
+                android:id="@+id/btnUploadImage"
+                android:layout_width="116dp"
+                android:layout_height="72dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Upload Image"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Add Volunteering Button -->
+    <Button
+        android:id="@+id/btnAddVolunteering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Volunteering"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardUploadImage" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

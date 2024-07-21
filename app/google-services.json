@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7793190702",
+    "project_id": "finalassignment-54813",
+    "storage_bucket": "finalassignment-54813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7793190702:android:3cbb33b8ae5cec5181fcbf",
+        "android_client_info": {
+          "package_name": "com.example.androidapplesson7"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9UXeFZyNHbzeC7jzpke3_59UCvUzQtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
