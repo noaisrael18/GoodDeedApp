@@ -45,14 +45,11 @@ public class AddVolunteeringActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_volunteering);
 
-
         // Initialize Firebase Analytics
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-
         // Initialize Firestore
         db = FirebaseFirestore.getInstance();
-
 
         // Log an event
         Bundle bundle = new Bundle();

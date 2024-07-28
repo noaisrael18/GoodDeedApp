@@ -72,11 +72,9 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
         rv.setLayoutManager(layoutManager);
 
-        // Initialize adapter with empty data
         adapter = new VolunteerAdapter(volunteerOppList);
         rv.setAdapter(adapter); // Ensure this line is present
 
-        // Fetch data from Firestore
         fetchVolunteerOpportunities();
     }
 
@@ -131,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE_ADD_VOLUNTEERING && resultCode == Activity.RESULT_OK) {
-            // Handle the result from Add Volunteering activity
             if (data != null) {
                 VolunteerOpp newVolunteerOpp = (VolunteerOpp) data.getSerializableExtra("newVolunteerOpp");
                 volunteerOppList.add(newVolunteerOpp);

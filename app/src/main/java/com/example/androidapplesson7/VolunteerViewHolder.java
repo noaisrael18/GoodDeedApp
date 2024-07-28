@@ -1,15 +1,11 @@
 package com.example.androidapplesson7;
 
 
-
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import org.jetbrains.annotations.NotNull;
-
-
 
 
 public class VolunteerViewHolder extends RecyclerView.ViewHolder {
@@ -18,8 +14,6 @@ public class VolunteerViewHolder extends RecyclerView.ViewHolder {
     public TextView Details;
     public TextView Location;
     public TextView Date;
-
-
 
 
     // Constructor
