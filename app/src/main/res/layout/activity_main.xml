@@ -14,6 +14,7 @@
     android:paddingBottom="5dp"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -24,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -38,8 +40,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
-        android:id="@+id/profileImageView"
+        android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="64dp"
@@ -48,6 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile" />
+
 
     <TextView
         android:id="@+id/textView3"
@@ -62,28 +66,37 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/rv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profileImageView" />
+        app:layout_constraintTop_toTopOf="@id/imageView" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="345dp"
+        android:layout_height="529dp"
         android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3" />
 
-    <Button
-        android:id="@+id/btnAddVolunteer"
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/AddVolunteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Volunteer"
-        android:onClick="openAddVolunteerPage"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="120dp"
+        android:fontFamily="@font/lato_black"
+        android:padding="18dp"
+        android:text="Add Volunteering"
+        android:textAllCaps="false"
+        android:textColor="?colorOnPrimary"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/add_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

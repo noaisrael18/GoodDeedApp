@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".DetailsActivity">
 
+
     <ImageView
         android:id="@+id/detailsImageView"
         android:layout_width="0dp"
@@ -16,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/detailsNameTextView" />
+
 
     <TextView
         android:id="@+id/detailsNameTextView"
@@ -28,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
     <TextView
         android:id="@+id/detailsDateTextView"
         android:layout_width="0dp"
@@ -38,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/detailsNameTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
     <TextView
         android:id="@+id/detailsLocationTextView"
@@ -50,6 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
     <TextView
         android:id="@+id/detailsTextView"
         android:layout_width="0dp"
@@ -60,6 +65,7 @@
         app:layout_constraintTop_toBottomOf="@id/detailsLocationTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
     <Button
         android:id="@+id/signUpButton"

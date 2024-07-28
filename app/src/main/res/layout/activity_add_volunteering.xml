@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
     <!-- Location -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardOrganization"
@@ -24,6 +28,10 @@
 
 
 
+
+
+
+
         <EditText
             android:id="@+id/editTextLocation"
             android:layout_width="match_parent"
@@ -33,6 +41,10 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
@@ -52,6 +64,10 @@
 
 
 
+
+
+
+
         <EditText
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
@@ -61,6 +77,10 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
@@ -80,6 +100,10 @@
 
 
 
+
+
+
+
         <EditText
             android:id="@+id/editTextActivity"
             android:layout_width="match_parent"
@@ -89,6 +113,10 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
@@ -108,6 +136,10 @@
 
 
 
+
+
+
+
         <EditText
             android:id="@+id/editTextDetails"
             android:layout_width="match_parent"
@@ -118,6 +150,10 @@
             android:textSize="18sp"
             android:textStyle="normal" />
     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
@@ -138,11 +174,19 @@
 
 
 
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp">
+
+
+
+
 
 
 
@@ -160,6 +204,10 @@
 
 
 
+
+
+
+
             <ImageButton
                 android:id="@+id/btnUploadImage"
                 android:layout_width="116dp"
@@ -173,7 +221,15 @@
 
 
 
+
+
+
+
     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
@@ -195,6 +251,12 @@
 
 
 
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 

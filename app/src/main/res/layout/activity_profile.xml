@@ -8,6 +8,9 @@
     android:padding="16dp"
     tools:context=".ProfileActivity">
 
+
+
+
     <!-- Profile Picture -->
     <ImageView
         android:id="@+id/profilePicture"
@@ -21,6 +24,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/profileName"
         app:layout_constraintHorizontal_bias="0.5" />
+
+
+
 
     <!-- Profile Name -->
     <TextView
@@ -38,6 +44,9 @@
         app:layout_constraintBottom_toTopOf="@+id/profilePhoneNumber"
         app:layout_constraintHorizontal_bias="0.5" />
 
+
+
+
     <!-- Profile Phone Number -->
     <TextView
         android:id="@+id/profilePhoneNumber"
@@ -53,6 +62,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/profileEmail"
         app:layout_constraintHorizontal_bias="0.5" />
+
+
+
 
     <!-- Profile Email -->
     <TextView
@@ -70,6 +82,9 @@
         app:layout_constraintBottom_toTopOf="@+id/goodDeedsComingUp"
         app:layout_constraintHorizontal_bias="0.5" />
 
+
+
+
     <!-- Good Deeds Coming Up Header -->
     <TextView
         android:id="@+id/goodDeedsComingUp"
@@ -86,6 +101,9 @@
         app:layout_constraintBottom_toTopOf="@+id/rvGoodDeedsComingUp"
         app:layout_constraintHorizontal_bias="0.5" />
 
+
+
+
     <!-- RecyclerView for Good Deeds Coming Up -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvGoodDeedsComingUp"
@@ -96,6 +114,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/goodDeedsCompleted" />
+
+
+
 
     <!-- Good Deeds Completed Header -->
     <TextView
@@ -112,6 +133,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />
 
+
+
+
     <!-- RecyclerView for Good Deeds Completed -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvGoodDeedsCompleted"
@@ -122,6 +146,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
+
+
+
     <!-- Home Button -->
     <ImageView
         android:id="@+id/homeImageView"
@@ -130,8 +157,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/ic_home"
+        android:src="@drawable/logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

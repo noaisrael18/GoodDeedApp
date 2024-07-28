@@ -4,11 +4,8 @@
 
 
     <!-- Permissions -->
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -51,12 +48,14 @@
             <!-- Parent activity name ensures back navigation -->
         </activity>
 
+
         <activity
             android:name=".OnboardingActivity"
             android:label="Onboarding"
             android:parentActivityName=".ProfileActivity">
             <!-- Parent activity name ensures back navigation -->
         </activity>
+
 
         <activity
             android:name=".DetailsActivity"
@@ -84,6 +83,6 @@
             android:value="@string/google_app_id" />
 
 
-        <!-- Remove crashlytics_mapping_file_id if not present -->
     </application>
 </manifest>
+

@@ -9,10 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
         app:cardBackgroundColor="?colorOnPrimary"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
@@ -31,9 +28,7 @@
                 android:id="@+id/image"
                 android:layout_width="115dp"
                 android:layout_height="115dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_margin="12dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,9 +41,7 @@
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="20dp"
+                android:layout_margin="16dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="TextView"
                 android:textColor="?colorOnSecondary"
@@ -62,9 +55,8 @@
                 android:id="@+id/date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
                 android:drawableLeft="@drawable/calendar_icon"
                 android:drawablePadding="4dp"
                 android:fontFamily="@font/lato"
@@ -72,18 +64,16 @@
                 android:textColor="?colorSecondaryVariant"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.058"
                 app:layout_constraintStart_toEndOf="@id/image"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
 
 
             <TextView
                 android:id="@+id/location"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="38dp"
-                android:layout_marginEnd="20dp"
+                android:layout_width="249dp"
+                android:layout_height="19dp"
+                android:layout_margin="38dp"
                 android:drawableLeft="@drawable/location_icon"
                 android:drawablePadding="4dp"
                 android:fontFamily="@font/lato"
@@ -91,15 +81,9 @@
                 android:textColor="?colorSecondaryVariant"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@id/image"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
